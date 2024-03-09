@@ -1,0 +1,158 @@
+/*The 1st part is the NAV menu CSS that is in all 3 pages*/
+.navigationBar {/*color of letter and background of menu*/
+    color: #fff;
+    background-color: rgb(147, 141, 196);
+}
+.navbar-container { /*defining the boxes inside the navigation bar as flex, separated with space betwwen, and aligned to center*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.menu ul { /*define menu ul as no style, margin or padding*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li { /*define the li menu as inline and with a separation of 12px between words*/
+    display: inline;
+    margin-right: 12px; 
+}
+.menu ul li:last-child { /*define that the last item of li should be aligned to the right end of page*/
+    margin-right: 0; 
+}
+.menu ul li a { /*define the color of links in the menu il and that it should not be subscribed*/
+    color: #fff; 
+    text-decoration: none; 
+}
+.menu ul li:hover{ /*define that when hover the mouse the underline of the link should appear*/
+    text-decoration: underline;
+}
+/*Continuing the index page*/
+.container { /*Defining the main container of the page*/
+    display: flex;                     /*It has flex display and any part can be moved*/ 
+    flex-direction: column;            /*Any inside part created is a column*/
+    justify-content: center;            /*All the columns created are centered inside the container*/
+    align-items: center;               /*All the columns after centered in the middle vertically are centered horizontally*/ 
+}
+.superior {  /*The first container inside the container*/
+    width:30%;                          /*Defines the width compared to the upper container in 50% size*/
+    display:flex;                       /*Anything inside can be arranged as desired*/
+    flex-direction: row;                /*Also any new part inside is a column*/
+    align-items: center;
+    justify-content: space-evenly;
+}
+.row { /*define the 2 rows with the name and surname of the actors and how the div is going to behave*/
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column; 
+    align-items: center;
+}
+/*Now it is the parte of the letters of the name of actors and name of the movie*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bowlby+One&family=Lilita+One&display=swap');
+.name { /*define the letter and weight*/
+    font-family:'Anton',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:bold;
+}
+/*Importing the font for the JAWS letters and adjusting it*/
+@font-face { /*creating the letter wiht a downloaded ttf*/
+    font-family: AmityJack;
+    src: url(../font/AmityJack.ttf);
+}
+.title{ /*puttin the letter and format into the title of the movie*/
+    font-family:AmityJack, sans-serif;
+    font-weight:bold;
+    color: #bf080a;
+    font-size: 900%;
+    
+}
+.inferior{ /*creating the inferior box with the bacground image*/
+    background-image: url("../images/jaws.png"); 
+    /*Image obtained in https://twistedsifter.com/2015/10/101-textless-movie-posters-gallery/*/
+    height:110vh;
+    width: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+    display: flex;
+    flex-direction: column;
+}
+/*This part is to adjust the terrifying text that appears between the shark and the woman*/
+@font-face { /*creating the font from an otf I downladed */
+    font-family: terrifying;
+    src: url(../font/texgyrescholaregular.otf);
+}
+.terrifyingText{ /*put the font and adjusted the position of the 1st line of the terrifying text*/
+    font-family:terrifying, sans-serif;
+    font-weight:bold;
+    font-size:100%;
+    font-style: italic;
+    text-align: center;
+    margin-top:10%;
+}
+.terrifyingText2{ /*put the font and adjusted position of 2nd line*/
+    font-family:terrifying, sans-serif;
+    font-weight:bold;
+    font-size:100%;
+    font-style: italic;
+    text-align: center;
+    
+}
+/*The next part is the configuration of the white letters in the bottom of the poster*/
+.whiteLetters1, .whiteLetters2, .whiteLetters3, .whiteLetters4, .whiteLetters5 { /*define the font of each new div and display*/
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    font-size:62%;
+    display:flex;
+    justify-content: center;
+}
+.whiteLetters1{ /*puts a margin in the 1st div, so all after this one are in the bottom*/
+    margin-top: auto;    
+}
+.pg{ /*define the image inserted with the rate of the movie in the bottom*/
+   display:flex;
+   justify-content: flex-end ;
+}    
+.footer { /*Last part is the footer that will be in all pages*/
+    background-color: rgb(147, 141, 196);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+/*The part below is to format the text in the About Section*/
+.about { /*defining the position, color and margin of the about*/
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+.question{ /*defining the format of the list*/
+    list-style-type: none
+}
+.answer{ /*defining the font and format of words in the answers*/
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size:82%;
+    list-style-type: none;
+    color:red;
+}    
+/* Now this is the code to center the image and the link in the originalPoster*/
+.column { /*define the box in the original poster page*/
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.clearfix::after { /*define how it behaves after the box clearfix*/
+    content: "";
+    clear: both;
+    display: table;
+}
+.original { /*define the box original*/
+    display: flex;
+    justify-content: center; 
+    align-items: top; 
+    height: 110vh; 
+}

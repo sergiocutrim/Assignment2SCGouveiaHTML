@@ -1,0 +1,72 @@
+<!DOCTYPE html>             <!-- opening declaration in all html documents is the same-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Jaws Poster</title>
+		<meta name="Sergio Cutrim Gouveia" content="Poster of Jaw all words done by programming"> <!--Included my name and the content-->
+		<meta name="Jaws Poster" content="background Jaws image"> <!--included the information-->
+        <!-- Poster inspiration: https://www.ebay.ca/itm/233252492006 -->
+		<link rel="stylesheet" href="css/styles.css"> 
+	</head>
+    <body> 
+        <main>
+            <header>
+                <div class="navigationBar"> <!--commenting in the index, but it will be the same in all pages-->
+                    <div class="navbar-container"> <!-- second area is to define the area where the logo for film is-->
+                        <div>
+                            <img src="images/logo.png" alt="Logo" width="130" height="80"> <!--included the image-->
+                        </div>
+                        <h1> Film Poster Reproduction</h1> <!--included the title of the page that will appear in the middle-->
+                        <div class="menu"> <!--another div to put in the end with the menu of the page-->
+                            <ul> <!--start with unordered list and include the li-->
+                                <li><a href="index.html" title="Home page" style="text-decoration: none;">Home</a></li>
+                                <li><a href="originalPoster.html" title="Original Poster" style="text-decoration: none;">Original Poster</a></li>
+                                <li><a href="about.html" title="About" style="text-decoration: none;">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container"> <!--the main container of the page, envolves everything-->
+                <div class="superior"> <!--first container to put the name and surname of the actors-->
+                    <div class="row"> <!--each name and surname is a single container-->
+                        <div class="name">ROY</div> <!--inside a new one to adjust the position with flex-->
+                        <div class="name">SCHEIDER</div>
+                    </div>
+                    <div class="row">
+                        <div class="name">ROBERT</div>
+                        <div class="name">SHAW</div> 
+                    </div>
+                    <div class="row">   
+                        <div class="name">RICHARD</div>
+                        <div class="name">DREYFUSS</div> 
+                    </div>
+                </div>    
+                <div> <!--creater a division to include a box where the title of the movie is going to be-->
+                    <div class="title"><a href="https://www.youtube.com/watch?v=U1fu_sA7XhE" target="_blank" 
+                        style="text-decoration: none; color: inherit;">JAWS</a></div>
+                    <!--included a link to the movie trailer-->    
+                </div>
+                <div class="inferior"> <!--the last div is to put the background image with the css and the text in the poster-->
+                    <div class="terrifyingText">The terrifying motion picture</div>
+                    <div class="terrifyingText2">from the terrifying No.1 best seller.</div>
+                    <div class ="whiteLetters1">Co-staring LORRAINE GARY·MURRAY HAMILTON·A ZANUCK/BROWN PRODUCTION</div>
+                    <div class ="whiteLetters2">Screenplay by PETER BENCHLEY and CARL GOTTLIEB·Based on the novel by PETER 
+                        BENCHLEY·Music by JOHN WILLIAMS</div>
+                    <div class ="whiteLetters3">Directed by STEVEN SPIELBERG·Produced by RICHARD D. ZANUCK and DAVID BROWN·
+                        A UNIVERSAL PICTURE</div>
+                    <div class ="whiteLetters4">TECHNICOLOR ANAVISION® MAYBE TOO INTENSE FOR YOUNGER CHILDREN</div>
+                    <div class ="whiteLetters5"><a href="https://www.imdb.com/title/tt0073195/?ref_=fn_al_tt_1" 
+                        target="_blank" style="text-decoration: none; color: inherit;">IMDB</a>
+                       <figure>
+                            <img class="pg" src="images/PG.png" alt="movie is rated PG" height="13px" width="60px">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="footer">This is a registered website</p>
+        </footer>
+    </body>
+</html>
